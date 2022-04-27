@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Ken Reibman - Home</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- A div that is centered at the top of each page for the title of the site -->
+        <!-- A div that is centered at the top of each page for the title of the site -->
         <header class="title-container">
             <h1 class="name">Ken Reibman</h1>
         </header>
@@ -21,7 +21,7 @@
 
             <!-- A div that is centered and visible (acts as a buffer) and contains within it three divs that are 
 centered and horizontally next to each other -->
-            <div class="info-container">
+            <div class="info-container-wage">
                 <div class="info">
                     <nav>
                         <h3 class="info__header">Other Pages</h2>
@@ -43,21 +43,23 @@ centered and horizontally next to each other -->
                     </nav>
                 </div>
                 <div class="info">
-                    <h4 class="info__header">TheTickSuit</h4>
-                    <a class="work__link" href="https://www.theticksuit.com">theticksuit.com</a>
-                    <p class="work__position">Frontend Developer</p>
-                    <p class="work__date">December 2018 - Present</p>
-                </div>
-                <div class="info">
-                    <h4 class="info__header">Sodexo</h4>
-                    <a class="work__link" href="https://www.sodexo.com">sodexo.com</a>
-                    <p class="work__position">Marketing Intern</p>
-                    <p class="work__date">January 2020 - May 2022</p>
+                    <h4>Wage Calculator</h4>
+                    <form action="">
+                        <span>Hourly Wage</span>
+                        <input type="number" id="hourlyWage" placeholder="0">
+                        <br>
+                        <br>
+                        <span>Hours per week</span>
+                        <input type="number" placeholder="0" id="hoursPerWeek">
+                    </form>
+                    <span><strong>Total</strong></span>
+                    <span id="total"></span><span>/yr</span>
                 </div>
             </div>
-            <!-- An email link -->
-            <a class="btn__contact" href="mailto:kreibman@albany.edu" >Contact Me</a>
         </main>
 
+
+
+    <script src="script.js"></script>
 </body>
 </html>

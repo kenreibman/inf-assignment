@@ -36,8 +36,18 @@ body {
     gap: 1rem;
     margin-top: 1rem;
 }
+
+.info-container-wage {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
 @media screen and (max-width: 575px) {
-    .info-container {
+    .info-container,
+    .info-container-wage {
         grid-template-columns: 1fr;
     }
 }
